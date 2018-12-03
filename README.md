@@ -5,7 +5,7 @@
 ![ScreenShot](/preview_3.png)
 
 
---PT-BR--
+--PT-BR--\
   Há algum tempo, você vem criando um jogo no estilo plataforma, ele é incrível, fases criativas, mas... Falta algo naquele rio um poça de água... Não se preocupe!! Com este plugin, poderá criar água dinâmica polygonal de forma simples e rápida e customizável!!
  
  Por que usar água dinâmica poligonal?
@@ -46,7 +46,7 @@
   
   
   
-  --EN-US--
+  --EN-US--\
   For some time, you've been creating a platform-style game, is awesome, creative levels, but... Something is missing in that river or puddle of water... Don't worry!! With this plugin, you will be able to create dinamic polygonal water customizable in a fast and simple way!!
   
   Why use dinamic polygonal water?
