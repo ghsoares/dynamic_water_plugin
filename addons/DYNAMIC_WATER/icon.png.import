@@ -7,7 +7,10 @@ path="res://.import/icon.png-7c1e58275ae1e3cfa6ce13114b746973.stex"
 [deps]
 
 source_file="res://addons/DYNAMIC_WATER/icon.png"
+source_md5="c8df361fbd9cfe39f8bef817b3fb8528"
+
 dest_files=[ "res://.import/icon.png-7c1e58275ae1e3cfa6ce13114b746973.stex" ]
+dest_md5="113df9723beae7c27e073d9a2e593469"
 
 [params]
 

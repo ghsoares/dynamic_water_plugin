@@ -6,6 +6,7 @@ export (float) var ALTURA = 0
 export (float) var LARGURA = 0
 export (float) var RESOLUCAO = 1
 export (Color) var COR = Color(1.0, 1.0, 1.0, 1.0)
+export (ParticlesMaterial) var droplets_material_path
 
 export (float) var TENSAO = 0.025
 export (float) var AMORTECIMENTO = 0.001
@@ -113,7 +114,7 @@ func create_water_block(): #criação da água
 func body_emerged(body): #acionado quando um corpo da classe RigidBody2D colide com a area da água
 	if body is RigidBody2D:
 		#distorção da água
-		var force_applied = body.linear_velocity.y * 0.07
+		var force_applied = body.linear_velocity.y * 0.01
 		
 		var body_pos = body.position.x - self.position.x
 		var closest_vec_pos_x = 9999999
@@ -131,23 +132,23 @@ func body_emerged(body): #acionado quando um corpo da classe RigidBody2D colide 
 		body.linear_velocity.y /= 1.5
 		
 		#efeitos
-		var droplets = Particles2D.new()
-		droplets.name = "particles"
-		droplets.amount = 20
-		droplets.lifetime = 2
-		droplets.explosiveness = 1
-		droplets.one_shot = true
-		droplets.local_coords = false
-		droplets.process_material = preload("res://water_droplets.tres")
+		if droplets_material_path != null:
+			var droplets = Particles2D.new()
+			droplets.name = "particles"
+			droplets.amount = 20
+			droplets.lifetime = 2
+			droplets.explosiveness = 1
+			droplets.one_shot = true
+			droplets.local_coords = false
+			droplets.process_material = droplets_material_path
+			
+			droplets.global_position = Vector2(body.global_position.x, body.global_position.y + 30)
+			droplets.rotation_degrees = -90
+			
+			$"..".add_child(droplets)
+			
+			droplets.visibility_rect = Rect2(Vector2(-900, -2000), Vector2(9999, 9999))
 		
-		droplets.global_position = Vector2(body.global_position.x, body.global_position.y + 30)
-		droplets.rotation_degrees = -90
-		
-		$"..".add_child(droplets)
-		
-		droplets.visibility_rect = Rect2(Vector2(-900, -2000), Vector2(9999, 9999))
-		
-		print(str(droplets.emitting))
 	pass
 
 func body_not_emerged(body):
