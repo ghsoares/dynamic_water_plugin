@@ -1,6 +1,8 @@
 --PT-BR--
 	Primeiramente, muito obrigado por ter baixado gratuitamente esse plugin!!
 
+
+
 	De nada, mas quero saber como usar...
 	
 	-Primeiramente, você tem que inserir a pasta "addons" no diretório raiz de seu projeto no Godot 3.0;
@@ -9,9 +11,13 @@
 	
 	-A partir de agora, você já tem disponível no seu projeto, um novo node, chamado "dynamic water", podendo adicioná-lo na cena.
 	
+	
+	
 	Beleza, mas não aparece nada!!
 	
 	-Ainda não está aparecendo nada pois precisa mudar as opções "WIDTH" (largura) e "HEIGHT" (altura).
+	
+	
 	
 	Boa!! agora é só executar a cena e...
 	
@@ -19,8 +25,35 @@
 	
 	-Para melhorar a aparência da água, mude a propriedade "COLOR" (cor) da água, para torná-la transparente e azul;
 	
+	
+	
 	Agora sim, é só executar a cena e...
 	
 	-Espera!! falta as propriedades físicas da água!!;
 	
-	-
+	-"TENSION" (TENSÃO) muda o quão elastico a água fica;
+	
+	-"DAMPING" (AMORTECIMENTO) muda o quão rápido a água perde energia;
+	
+	-"PASSES" muda o número de vértices que será dispersado a energia;
+	
+	-"DISPERSION" (DISPERSÃO) muda o quanto de energia será dispersado;
+	
+	
+	
+	Agora não falta mais nenhuma propriedade, então já posso executar e... A água não se meche?
+	
+	-A água não se mexe pois a única maneira na qual a água interage é por corpos da classe RigidBody2D,
+	pois as variáveis de deslocação da onda é calculada pela velocidade linear exclusivo do RigidBody2D;
+	
+	-Agora sim!! Ao executar a cena e colocar de alguma forma um RigidBody2D com colisão, ao "mergulhar" na água, formará ondas que comportarão
+	de forma diferente a partir das propriedades físicas.
+	
+	
+	
+	
+	
+	
+	
+	
+	
