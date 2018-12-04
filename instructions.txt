@@ -1,0 +1,26 @@
+--PT-BR--
+	Primeiramente, muito obrigado por ter baixado gratuitamente esse plugin!!
+
+	De nada, mas quero saber como usar...
+	
+	-Primeiramente, você tem que inserir a pasta "addons" no diretório raiz de seu projeto no Godot 3.0;
+	
+	-Depois, ativa o plugin nas opções do projeto, na aba "Plugins", irá aparecer o nome do plugin, mude a opção "status" para "active" ou "ativo";
+	
+	-A partir de agora, você já tem disponível no seu projeto, um novo node, chamado "dynamic water", podendo adicioná-lo na cena.
+	
+	Beleza, mas não aparece nada!!
+	
+	-Ainda não está aparecendo nada pois precisa mudar as opções "WIDTH" (largura) e "HEIGHT" (altura).
+	
+	Boa!! agora é só executar a cena e...
+	
+	-Tenha calma meu jovem!! Caso você for executar, tudo que verá é apenas um bloco branco extático;
+	
+	-Para melhorar a aparência da água, mude a propriedade "COLOR" (cor) da água, para torná-la transparente e azul;
+	
+	Agora sim, é só executar a cena e...
+	
+	-Espera!! falta as propriedades físicas da água!!;
+	
+	-
