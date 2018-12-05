@@ -1,0 +1,76 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://CollisionPolygon2D.gd" type="Script" id=1]
+[ext_resource path="res://addons/DYNAMIC_WATER/dynamic_water.gd" type="Script" id=2]
+[ext_resource path="res://addons/DYNAMIC_WATER/icon.png" type="Texture" id=3]
+[ext_resource path="res://addons/DYNAMIC_WATER/demo_droplets_particles_materials/water_droplets.tres" type="Material" id=4]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=5]
+
+[node name="ROOT" type="Node" index="0"]
+
+[node name="Polygon2D" type="Polygon2D" parent="." index="0"]
+
+z_index = 1
+polygon = PoolVector2Array( -20, 610, 280, 610, 310, 530, 360, 470, 450, 430, 840, 430, 840, -10, 950, -10, 950, 680, -90, 680, -90, -10, -20, -10 )
+uv = PoolVector2Array(  )
+color = Color( 1, 1, 1, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+_sections_unfolded = [ "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="1"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array(  )
+script = ExtResource( 1 )
+
+[node name="dynamic water" type="Node2D" parent="." index="2"]
+
+position = Vector2( -30, 610 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_editor_icon": ExtResource( 3 )
+}
+ALTURA = 120.0
+LARGURA = 400.0
+RESOLUCAO = 100.0
+COR = Color( 0.519226, 0.707031, 0.698228, 0.77349 )
+droplets_material_path = ExtResource( 4 )
+TENSAO = 0.1
+AMORTECIMENTO = 0.02
+PASSES = 4
+DISPERSAO = 0.1
+force_multiplyier = 0.01
+NUMBER_OF_VECS_TO_APPLY_FORCE = 5
+
+[node name="Player" parent="." index="3" instance=ExtResource( 5 )]
+
+position = Vector2( 562.852, 285.601 )
+z_index = -1
+friction = 0.0
+bounce = 1.0
+gravity_scale = 30.0
+_sections_unfolded = [ "Z Index" ]
+acceleration = 50.0
+jump_force = 1000.0
+
+
