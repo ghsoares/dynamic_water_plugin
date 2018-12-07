@@ -5,7 +5,7 @@
 ![ScreenShot](/preview_3.png)
 
 
---PT-BR--\
+### --PT-BR--
   Há algum tempo, você vem criando um jogo no estilo plataforma, ele é incrível, fases criativas, mas... Falta algo naquele rio um poça de água... Não se preocupe!! Com este plugin, poderá criar água dinâmica polygonal de forma simples e rápida e customizável!!
  
  Por que usar água dinâmica poligonal?\
@@ -45,50 +45,49 @@
   
   
   
+  ### --EN-US--
+  For some time, you've been creating a platform-style game, with awesome and creative levels. But... something's missing in that river or puddle of water... Don't worry! With this plugin, you will be able to create dynamic and customizable polygonal water the fast and simple way!
   
-  --EN-US--\
-  For some time, you've been creating a platform-style game, is awesome, creative levels, but... Something is missing in that river or puddle of water... Don't worry!! With this plugin, you will be able to create dinamic polygonal water customizable in a fast and simple way!!
+  Why use dynamic polygonal water?\
+  -Because it needs less processing, everything that is being processed are physical calculations of damped harmonic oscillation and energy dispersion.
   
-  Why use dinamic polygonal water?\
-  -Because need less processing, everything that is being processed are physical calculations of damped harmonic oscilation and energy dispersion.
+  I can only use this for water?\
+  -Nope! You can customize the color and the way that the fluid acts to be more like, lava, for example.
   
-  I can use only as water?\
-  -Nope!! You can customize the color and the way that the fluid acts to be like lava, for example.
+  I think I saw this somewhere else...\
+  -Yes, the idea is not 100% mine. I just modified some items from the tutorial from the **The Step Event** of the game engine Game Maker Studio 1.4 and 2, here is the link if it interests you.: https://www.youtube.com/watch?v=LG3wocqjC-0 
   
-  I think that i see that in somewhere...\
-  -Yes, the idea is not 100% mine, i just modified some itens from the tutorial of the **The Step Event** of the game engine Game Maker Studio 1.4 and 2, here is the link if has interest: https://www.youtube.com/watch?v=LG3wocqjC-0 
-  
-  How to use?\
-  -Here is a little tutorial of how to use:
+  How do I use this?\
+  -Here is a little tutorial to help you.:
   
   
-  After inserting the folder addons in your project, and activate the plugin in the project options you can, in any scene, add a new node called "dynamic water", that derives from Node2D;
+  After inserting the folder addons in your project, and activate the plugin in the project options you can, in any scene, add a new node called `dynamic water` that derives from `Node2D`.
   
-  When the node is inserted, change the properties "HEIGHT" and "WIDTH" to change the water area;
+  When the node is inserted, change the properties `HEIGHT` and `WIDTH` to change the water area.
   
-  Changing the property "RESOLUTION", you can change the ammount of vectors in the water surface, increasing the quality of the waves;
+  By changing the property `RESOLUTION`, you change the ammount of vectors in the water surface, increasing the quality of the waves.
   
-  The property "COLOR" changes the color of the water (duh?);
+  The property `COLOR` changes the color of the water (duh?).
   
-  Now, some physic properties, that playing a little can understand more:
+  Now for the physics properties. Playing with them a little can help to understand them more:
   
-  -"TENSION" change the "elasticy" of the water, making that the vectors return to original position more fast;
+  -`TENSION`: Changes the "springiness" of the water waves, meaning the vectors return to their original positions faster.
   
-  -"DAMPING" makes that the energy loose faster;
+  -`DAMPING`: Water waves die down faster.
   
-  -"PASSES" number of vectors that is dispersed the energy;
+  -`PASSES`: Number of vectors that the waves' energy is dispersed into.
   
-  -"DISPERSION" the energy quantity dispersed by the vectors;
+  -`DISPERSION`: The amount of energy dispersed into the wave vectors;
   
-  OK, but how i make the water move?\
-  -For now until 1.0 version of the plugin, the only way is to use a object of the RigidBody2D class, because the calculated variables of energy need some variables of the RigidBody2D (linear velocity, exclusive of the class). I have plans of improve the plugin to calculate the velocity of any body from the position change.
+  OK, but how do I make the water move?\
+  -Until version 1.0 of the plugin, the only way is to use an object of the `RigidBody2D` class, because the calculated variables of energy need some variables from a `RigidBody2D` (linear velocity, exclusive of the class). I have plans of improving the plugin to calculate the velocity of any body from the position change.
   
-  I have some ideas to your plugin, i can help?\
-  -Of course, if want to help in that and other projects, send a e-mail to: ghsoares99795@gmail.com
+  I have some ideas for your plugin. Can I help?\
+  -Of course, if you want to help in that and other projects, send an e-mail to: ghsoares99795@gmail.com
   
-  So, thank you to your attention and i hope that you enjoy the plugin!!
+  So, thank you for your attention and I hope that you enjoy this plugin!!
   
-  SRY FOR THE BAD ENGLISH BTW XD
+  ~~SRY FOR THE BAD ENGLISH BTW XD~~
   
   
   
