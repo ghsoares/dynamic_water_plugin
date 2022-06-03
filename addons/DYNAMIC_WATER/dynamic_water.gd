@@ -26,7 +26,7 @@ var _col
 
 func _ready(): #função chamado na execução do node
 	if Engine.is_editor_hint() == false:
- 		create_water_block()
+		create_water_block()
 	set_process(true)
 	self.z_index = 999
 
