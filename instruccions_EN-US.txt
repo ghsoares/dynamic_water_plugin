@@ -1,0 +1,48 @@
+First of all, thank you very much for downloading this plugin for free!
+
+
+
+You're welcome, but I want to know how to use it...
+
+-First, you have to insert the "addons" folder in the root directory of your Godot project.
+
+-Then, activate the plugin in the project options, in the "Plugins" tab, the name of the plugin will appear, change the "status" option to "active" or "active";
+
+-From now on, you already have a new node available in your project, called "dynamic water", being able to add it to the scene.
+
+
+
+Nice, but nothing appears!!
+
+-Nothing is displayed yet because you need to change the "WIDTH" and "HEIGHT" options.
+
+
+
+Okay!! now just run the scene and...
+
+-Take it easy, young man!! If you go to run it, all you'll see is just a static white block.
+
+-To improve the appearance of the water, change the "COLOR" property of the water, so that it is transparent and blue.
+
+
+
+Now run the scene and...
+
+-Wait!! it lacks the physical properties of water!!;
+
+- TENSION: Changes the elasticity of the water;
+
+- DAMPING: Changes how fast the water loses energy;
+
+- PASSES: Changes the number of vertices that the energy will disperse;
+
+- DISPERSION: Changes the amount of energy that will be scattered;
+
+
+
+Now there are no more properties missing, so I can run it and... The water is not moving?
+
+-The water does not move because the only way water interacts is through bodies of the RigidBody2D class,
+because wave displacement variables are computed using RigidBody2D's unique linear velocity;
+
+-Yes now!! By running the scene and somehow placing a RigidBody2D with collision, by "plunging" into the water, it will form ripples that will behave differently based on physical properties.
