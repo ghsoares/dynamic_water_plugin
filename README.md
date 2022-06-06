@@ -20,7 +20,7 @@ Creo que lo he visto en alguna parte...\
 ¿Cómo usar?\
  -Aquí hay un pequeño tutorial sobre cómo usarlo:
 
-Después de insertar la carpeta de **addons** en su proyecto y activar el complemento a través de las opciones del proyecto, puede, en cualquier escena, agregar un nuevo nodo llamado **"dynamic water"**, que se deriva de node2D;
+Después de insertar la carpeta de `addons` en su proyecto y activar el complemento a través de las opciones del proyecto, puede, en cualquier escena, agregar un nuevo nodo llamado `dynamic water`, que se deriva de node2D;
 
 Cuando se inserte el nodo, cambie las propiedades "HEIGHT" (alto) y "WIDTH" (ancho) para cambiar el área del agua;
 
@@ -31,7 +31,7 @@ La propiedad "COLOR" le permite cambiar el color del agua;
 Ahora, algunas propiedades físicas, que jugando un poco puedes entender más:
 
 ```
-- TENSION: Cambia la propiedad "elástica" del agua, haciendo que los vectores tiendan a volver a su posición original más rápidamente.
+- TENSION: Cambia la propiedad "elástica" del agua.
 - DAMPING: Hace que la energía se pierda más rápido.
 - PASSES: Número de vectores que serán dispersados ​​por energía.
 - DISPERSION: La cantidad de energía dispersada por los vectores.
@@ -61,7 +61,7 @@ Eu acho que já vi isso am algum lugar...\
 Como usar?\
  -Aqui vai um pequeno tutorial de como usar:
 
-Após inserir a pasta **addons** no seu projeto, e ativar o plugin pelas opções do projeto poderá, em qualquer cena, adicionar um novo node chamado **"dynamic water"**, que deriva-se do node2D;
+Após inserir a pasta `addons` no seu projeto, e ativar o plugin pelas opções do projeto poderá, em qualquer cena, adicionar um novo node chamado `dynamic water`, que deriva-se do node2D;
 
 Quando for inserido o node, mude as propriedades "HEIGHT" (altura) e "WIDTH" (largura) para mudar a área da água;
 
@@ -72,10 +72,10 @@ A propriedade "COLOR" (cor) permite mudar a cor da água;
 Agora, algumas propriedades físicas, que brincando um pouco pode entender mais:
 
 ```
-- TENSION: Muda a propriedade "elastica" da água, fazendo com que os vetores tendem voltar à posição original mais rapidamente.
-- DAMPING: Faz com que a energia perca mais rapidamente;\
-- PASSES: Número de vetores que será dispersado a energia;\
-- DISPERSION: A quantidade de energia dispersado pelos vetores
+- TENSION: Muda a propriedade "elastica" da água.
+- DAMPING: Faz com que a energia perca mais rapidamente.
+- PASSES: Número de vetores que será dispersado a energia.
+- DISPERSION: A quantidade de energia dispersado pelos vetores.
 ```
 
 Tá, mas agora como faço a água se mexer?\
@@ -102,7 +102,7 @@ I think I saw this somewhere else...\
 How do I use this?\
  -Here is a little tutorial to help you.:
 
-After inserting the folder **addons** in your project, and activate the plugin in the project options you can, in any scene, add a new node called **"dynamic water"** that derives from Node2D.
+After inserting the folder `addons` in your project, and activate the plugin in the project options you can, in any scene, add a new node called `dynamic water` that derives from Node2D.
 
 When the node is inserted, change the properties HEIGHT and WIDTH to change the water area.
 
@@ -113,7 +113,7 @@ The property COLOR changes the color of the water (duh?).
 Now for the physics properties. Playing with them a little can help to understand them more:
 
 ```
-- TENSION: Changes the "springiness" of the water waves, meaning the vectors return to their original positions faster.
+- TENSION: Changes the "springiness" of the water waves.
 - DAMPING: Water waves die down faster.
 - PASSES: Number of vectors that the waves' energy is dispersed into.
 - DISPERSION: The amount of energy dispersed into the wave vectors;
