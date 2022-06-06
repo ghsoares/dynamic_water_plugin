@@ -4,47 +4,6 @@
 ![ScreenShot](/preview_2.png)
 ![ScreenShot](/preview_3.png)
 
-### --ES-LATAM--
-
-Llevas un tiempo creando un juego de plataformas, es increíble, niveles creativos, pero... Falta algo en ese río, un charco... ¡¡No te preocupes!! ¡Con este complemento, podrá crear agua poligonal dinámica de una manera simple, rápida y personalizable!
-
-¿Por qué usar agua dinámica poligonal?\
- -Debido a que necesita menos procesamiento, todo lo que se está realizando son cálculos físicos de oscilación armónica amortiguada y dispersión de energía.
-
-¿Es como el agua?\
- -¡¡No!! Puede personalizar el color y la forma en que se comporta para que parezca lava, por ejemplo.
-
-Creo que lo he visto en alguna parte...\
- -En serio, la idea no es 100% mía, solo modifiqué algunos ítems del tutorial **The Step Event** para el motor Game Maker Studio 1.4 y 2, aquí les dejo el link por si les interesa: https://www .youtube .com/watch?v=LG3wocqjC-0
-
-¿Cómo usar?\
- -Aquí hay un pequeño tutorial sobre cómo usarlo:
-
-Después de insertar la carpeta de `addons` en su proyecto y activar el complemento a través de las opciones del proyecto, puede, en cualquier escena, agregar un nuevo nodo llamado `dynamic water`, que se deriva de node2D;
-
-Cuando se inserte el nodo, cambie las propiedades "HEIGHT" (alto) y "WIDTH" (ancho) para cambiar el área del agua;
-
-Al cambiar la propiedad "RESOLUTION" (resolucion), puede cambiar la cantidad de vectores en la superficie del agua, aumentando la calidad de las olas;
-
-La propiedad "COLOR" le permite cambiar el color del agua;
-
-Ahora, algunas propiedades físicas, que jugando un poco puedes entender más:
-
-```
-- TENSION: Cambia la propiedad "elástica" del agua.
-- DAMPING: Hace que la energía se pierda más rápido.
-- PASSES: Número de vectores que serán dispersados ​​por energía.
-- DISPERSION: La cantidad de energía dispersada por los vectores.
-```
-
-Está bien, pero ahora, ¿cómo hago para que el agua se mueva?\
- -Por ahora hasta la versión 1.0 del complemento, la única forma es usar un objeto de la clase RigidBody2D, ya que las variables calculadas a partir de la energía aplicada necesitan variables del RigidBody2D (que es la velocidad lineal, exclusiva de la clase). Tengo planes para mejorar el complemento para calcular la velocidad de cualquier cuerpo al cambiar de posición.
-
-Tengo algunas ideas para tu complemento, ¿puedo ayudarte?\
- -Por supuesto, si desea ayudar con este y otros proyectos, envíe un correo electrónico a: ghsoares99795@gmail.com
-
-De todos modos, muchas gracias por su atención y espero que les guste el complemento.
-
 ### --PT-BR--
 
 Há algum tempo, você vem criando um jogo no estilo plataforma, ele é incrível, fases criativas, mas... Falta algo naquele rio um poça de água... Não se preocupe!! Com este plugin, poderá criar água dinâmica polygonal de forma simples e rápida e customizável!!
@@ -128,3 +87,44 @@ I have some ideas for your plugin. Can I help?\
 So, thank you for your attention and I hope that you enjoy this plugin!!
 
 ~~SRY FOR THE BAD ENGLISH BTW XD~~
+
+### --ES-LATAM--
+
+Llevas un tiempo creando un juego de plataformas, es increíble, niveles creativos, pero... Falta algo en ese río, un charco... ¡¡No te preocupes!! ¡Con este plugin, podrá crear agua poligonal dinámica de una manera simple, rápida y personalizable!
+
+¿Por qué usar agua dinámica poligonal?\
+ -Debido a que necesita menos procesamiento, todo lo que se está realizando son cálculos físicos de oscilación armónica amortiguada y dispersión de energía.
+
+¿Es como el agua?\
+ -¡¡No!! Puede personalizar el color y la forma en que se comporta para que parezca lava, por ejemplo.
+
+Creo que lo he visto en alguna parte...\
+ -En serio, la idea no es 100% mía, solo modifiqué algunos ítems del tutorial **The Step Event** para el motor Game Maker Studio 1.4 y 2, aquí les dejo el link por si les interesa: https://www .youtube .com/watch?v=LG3wocqjC-0
+
+¿Cómo usar?\
+ -Aquí hay un pequeño tutorial sobre cómo usarlo:
+
+Después de insertar la carpeta de `addons` en su proyecto y activar el plugin a través de las opciones del proyecto, puede, en cualquier escena, agregar un nuevo nodo llamado `dynamic water`, que se deriva de node2D;
+
+Cuando se inserte el nodo, cambie las propiedades "HEIGHT" y "WIDTH" para cambiar el área del agua;
+
+Al cambiar la propiedad "RESOLUTION", puede cambiar la cantidad de vectores en la superficie del agua, aumentando la calidad de las olas;
+
+La propiedad "COLOR" le permite cambiar el color del agua;
+
+Ahora, algunas propiedades físicas, que jugando un poco puedes entender más:
+
+```
+- TENSION: Cambia la propiedad "elástica" del agua.
+- DAMPING: Hace que la energía se pierda más rápido.
+- PASSES: Número de vectores que serán dispersados ​​por energía.
+- DISPERSION: La cantidad de energía dispersada por los vectores.
+```
+
+Está bien, pero ahora, ¿cómo hago para que el agua se mueva?\
+ -Por ahora hasta la versión 1.0 del plugin, la única forma es usar un objeto de la clase RigidBody2D, ya que las variables calculadas a partir de la energía aplicada necesitan variables del RigidBody2D (que es la velocidad lineal, exclusiva de la clase). Tengo planes para mejorar el plugin para calcular la velocidad de cualquier cuerpo al cambiar de posición.
+
+Tengo algunas ideas para tu plugin, ¿puedo ayudarte?\
+ -Por supuesto, si desea ayudar con este y otros proyectos, envíe un correo electrónico a: ghsoares99795@gmail.com
+
+De todos modos, muchas gracias por su atención y espero que les guste el plugin.
